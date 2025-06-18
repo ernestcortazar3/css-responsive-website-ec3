@@ -16,13 +16,16 @@
   .teammate-social-icons > div:hover {
     background-color: #969696;
   }
-  footer .social-icons .icon:hover {
-    background-color: #fff;
-    /* color: #fff; */
-  }
+
   footer .social-icons > div:hover {
     color: #fff;
   }
+
+  footer .social-icons > div:hover .icon {
+    background-color: #fff;
+    color: #000;
+  }
+
   .footer-contacts a:hover {
     color: #fff;
     text-decoration: underline;
@@ -44,7 +47,100 @@
     width: 100%;
     background-color: #fff;
   }
-  /* i left off here kdafoiden;asofienaifnaenfiasndfnasldnfasjlndfgjasndajkfaslkjdnfasjkbdfjkl */
+  .portfolio-list {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .teammate {
+    width: 40%;
+    max-width: 500px;
+    margin: 6px;
+    align-items: center;
+  }
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+  .teammate-data {
+    text-align: center;
+    align-items: center;
+  }
+  .footer-content span {
+    display: none;
+  }
+  .footer-content > div {
+    justify-content: center;
+    gap: 30px;
+  }
+  footer .social-icons div {
+    width: 100%;
+  }
+  .footer-content .social-icons .icon {
+    background-color: #fff;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+  }
+  .footer-contacts > div {
+    width: 300px;
+  }
+  .footer-contacts ul li a {
+    color: #fff;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+  .portfolio-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-item-info {
+    text-align: center;
+  }
+  .teammates-list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teammate {
+    border: 1px solid #969696;
+    padding: 10px;
+    flex-direction: row;
+    width: 100%;
+  }
+  .teammate-img-wrapper {
+    width: 45%;
+    margin-right: 10px;
+  }
+  .teammate-data {
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .teammate-social-icons {
+    gap: 10px;
+  }
+  .footer-content .social-icons {
+    flex-direction: column;
+  }
+  .footer-content span {
+    display: block;
+    color: #fff;
+  }
+}
