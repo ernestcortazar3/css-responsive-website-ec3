@@ -4,14 +4,47 @@
   * Add the media rule and the styles that belong to the MOBILE view only
 */
 
-@media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
+/* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+@media (min-width: 1024px) {
+  .top-navigation .trigram {
+    display: none;
+  }
+  .top-navigation ul li a:hover {
+    color: #434343;
+  }
+  .teammate-social-icons > div:hover {
+    background-color: #969696;
+  }
+  footer .social-icons .icon:hover {
+    background-color: #fff;
+    /* color: #fff; */
+  }
+  footer .social-icons > div:hover {
+    color: #fff;
+  }
+  .footer-contacts a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+
+@media (max-width: 1023px) {
+  .top-navigation .trigram {
+    display: block;
+  }
+  .top-navigation ul {
+    display: none;
+  }
+  header {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+  }
+  /* i left off here kdafoiden;asofienaifnaenfiasndfnasldnfasjlndfgjasndajkfaslkjdnfasjkbdfjkl */
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
